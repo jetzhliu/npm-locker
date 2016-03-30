@@ -11,10 +11,12 @@ npm i -g npm-locker
 # 2. if you install local, add lock script to npm script(in package.json)
 npm-lock
 # 3. run in your project
+```
 
 ## showcase
 
 in this project, the package.json is:
+
 ```json
 {
   "name": "npm-locker",
