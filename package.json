@@ -1,6 +1,6 @@
 {
   "name": "npm-locker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "use npm shrinkwrap and pack all your dependences to node_packages",
   "main": "index.js",
   "bin": {
