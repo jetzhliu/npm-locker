@@ -1,0 +1,11 @@
+{
+    "name": "npm-locker",
+    "version": "1.0.0",
+    "dependencies": {
+        "shelljs": {
+            "version": "0.6.0",
+            "from": "shelljs@*",
+            "resolved": "./node_packages/shelljs.tgz"
+        }
+    }
+}

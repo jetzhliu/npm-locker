@@ -1,0 +1,28 @@
+{
+  "name": "npm-locker",
+  "version": "1.0.0",
+  "description": "use npm shrinkwrap and pack all your dependences to node_packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetzhliu/npm-locker.git"
+  },
+  "keywords": [
+    "npm",
+    "shrinkwrap",
+    "node_modules",
+    "node_packages"
+  ],
+  "author": "jetzhliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jetzhliu/npm-locker/issues"
+  },
+  "homepage": "https://github.com/jetzhliu/npm-locker#readme",
+  "dependencies": {
+    "shelljs": "^0.6.0"
+  }
+}
