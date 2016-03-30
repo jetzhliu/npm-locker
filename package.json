@@ -3,8 +3,12 @@
   "version": "1.0.1",
   "description": "use npm shrinkwrap and pack all your dependences to node_packages",
   "main": "index.js",
+  "bin": {
+    "npm-lock": "bin/npm-lock.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lock": "node bin/npm-lock"
   },
   "repository": {
     "type": "git",
