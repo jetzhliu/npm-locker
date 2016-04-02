@@ -1,10 +1,14 @@
 {
   "name": "npm-locker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "use npm shrinkwrap and pack all your dependences to node_packages",
   "main": "index.js",
+  "bin": {
+    "npm-lock": "bin/npm-lock.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lock": "node bin/npm-lock"
   },
   "repository": {
     "type": "git",
@@ -21,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/jetzhliu/npm-locker/issues"
   },
-  "homepage": "https://github.com/jetzhliu/npm-locker#readme",
-  "dependencies": {
-    "shelljs": "^0.6.0"
-  }
+  "homepage": "https://github.com/jetzhliu/npm-locker#readme"
 }

@@ -11,32 +11,42 @@ npm i -g npm-locker
 # 2. if you install local, add lock script to npm script(in package.json)
 npm-lock
 # 3. run in your project
+```
 
 ## showcase
 
-in this project, the package.json is:
+for example, in some project, the package.json is:
+
 ```json
 {
-  "name": "npm-locker",
+  "name": "awesome-project",
   "version": "1.0.0",
+  "scripts": {
+    "lock": "npm-lock"
+  },
   "dependencies": {
-    "shelljs": "^0.6.0"
+    "npm-locker": "^1.1.0"
   }
 }
 ```
 
-after run npm-lock, a lockfile `npm-shrinkwrap.json` is create,
-and the node modules relate to you project
+First, you need run `npm shrinkwrap`,
+then a lockfile `npm-shrinkwrap.json` is created.
+
+Secondly, run `npm run lock`,
+and `node_packages` is created and include all the
+dependencies for you, also the `npm-shrinkwrap.json` will replace the resolve
+field relate to you project
 
 ```json
 {
-    "name": "npm-locker",
+    "name": "awesome-project",
     "version": "1.0.0",
     "dependencies": {
-        "shelljs": {
-            "version": "0.6.0",
-            "from": "shelljs@*",
-            "resolved": "./node_packages/shelljs.tgz"
+        "npm-locker": {
+            "version": "1.1.0",
+            "from": "npm-locker@^1.1.0",
+            "resolved": "./node_packages/npm-locker-1.1.0.tgz"
         }
     }
 }
@@ -45,3 +55,9 @@ and the node modules relate to you project
 and all your packages are in `node_packages`
 
 have fun!
+
+## feature
+
+[x] no dependencies
+[ ] auto download from network
+[ ] auto run `npm shrinkwrap` (in some node envirenment, it will crash)
